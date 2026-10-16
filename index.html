@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm Sách Online</title>
+    <link rel="stylesheet" href="baitaplon.css">
+</head>
+
+<body>
+    <script src="baitaplon.js"></script>
+    <!-- Header / Thanh điều hướng -->
+    <header>
+        <div class="logo"> Tiệm Sách Online</div>
+        <nav>
+            <a href="index.php" class="active">Trang chủ</a>
+            <a href="theloai.html">Thể loại</a>
+            <a href="#">Giới thiệu</a>
+            <a href="cart.html">Giỏ hàng</a>
+            <a href="admin/index.php" class="admin-link">Quản Trị</a>
+            <a href="login.html" class="admin-link">Đăng Nhập</a>
+        </nav>
+    </header>
+
+
+<!-- Banner su kien khuyen mai -->
+<section class="promo-slider">
+
+    <div class="promo-slides">
+
+        <!-- Su kien 1 -->
+        <div class="promo-slide active promo-pink">
+            <div class="promo-info">
+                <span class="promo-tag">SIEU SALE</span>
+                <h2>HỘI SÁCH ONLINE</h2>
+                <h1>GIẢM GIÁ ĐẾN 50%</h1>
+                <p>thoả sức khám phá những cuốn sách hay với giá ưu đãi</p>
+                <a href="theloai.html" class="promo-button">MUA SACH NGAY</a>
+            </div>
+            <div class="promo-decoration">50%</div>
+        </div>
+
+        <!-- Su kien 2 -->
+        <div class="promo-slide promo-blue">
+            <div class="promo-info">
+                <span class="promo-tag">FLASH SALE</span>
+                <h2>GIO VANG SANH SACH</h2>
+                <h1>UU DAI DEN 40%</h1>
+                <p>Co hoi so huu sach hay voi muc gia hap dan.</p>
+                <a href="theloai.html" class="promo-button">KHAM PHA NGAY</a>
+            </div>
+            <div class="promo-decoration">SALE!</div>
+        </div>
+
+        <!-- Su kien 3 -->
+        <div class="promo-slide promo-green">
+            <div class="promo-info">
+                <span class="promo-tag">SU KIEN DAC BIET</span>
+                <h2>TUAN LE SACH THIEU NHI</h2>
+                <h1>GIAM GIA DEN 30%</h1>
+                <p>Nhung cau chuyen thu vi danh cho ban doc nho tuoi.</p>
+                <a href="theloai.html" class="promo-button">XEM SACH NGAY</a>
+            </div>
+            <div class="promo-decoration">BOOK</div>
+        </div>
+
+        <!-- Su kien 4 -->
+        <div class="promo-slide promo-purple">
+            <div class="promo-info">
+                <span class="promo-tag">SACH MOI</span>
+                <h2>KHOI DAU HANH TRINH TRI THUC</h2>
+                <h1>NHIEU DAU SACH MOI</h1>
+                <p>Cap nhat nhung cuon sach dang chu y tai Tiem Sach Online.</p>
+                <a href="theloai.html" class="promo-button">KHAM PHA NGAY</a>
+            </div>
+            <div class="promo-decoration">NEW</div>
+        </div>
+
+    </div>
+
+    <!-- Nut chuyen banner -->
+    <button class="promo-arrow promo-prev" type="button"
+            aria-label="Su kien truoc">&#10094;</button>
+
+    <button class="promo-arrow promo-next" type="button"
+            aria-label="Su kien tiep theo">&#10095;</button>
+
+    <!-- Cac cham chon su kien -->
+    <div class="promo-dots">
+        <button class="promo-dot active" type="button" aria-label="Su kien 1"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 2"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 3"></button>
+        <button class="promo-dot" type="button" aria-label="Su kien 4"></button>
+    </div>
+
+</section>
+
+
+
+    <main class="container-cart">
+        <h2>GIỎ HÀNG ( 0 sản phẩm )</h2>
+        <p>Chưa Có Sản Phẩm Trong Giỏ Hàng</p>
+        <a href="index.html" class="btn-shopping">MUA SẮM NGAY</a>
+    </main>
+
+    <!-- Nội dung danh sách sách -->
+    <main class="container">
+        <h2>Danh mục sách nổi bật</h2>
+        
+        <div class="book-grid">
+    
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach1.jfif" alt="Bí mật thành Paris">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">195.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach2.jfif" alt="Chú bé chăn cừu">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">45.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach3.jfif" alt="Chúa tể những chiếc nhẫn">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">150.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach4.jfif" alt="Cô bé quàng khăn đỏ">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">35.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-cayegory="tieuthuyet">
+                <img src="images/sach5.jfif" alt="Đồi gió hú">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">180.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tuyentranh">
+                <img src="images/sach6.jfif" alt="Doraemon Tập 23">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach7.jfif" alt="Doraemon Tập 15">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="truyentranh">
+                <img src="images/sach8.jfif" alt="Doraemon Tập 22">
+                <div class="book-info">
+                    <h3>Truyện Tranh</h3>
+                    <p class="price">25.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach9.jfif" alt="Không gia đình">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">168.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach10.jfif" alt="Những người khốn khổ">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">110.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach11.jfif" alt="Sách song ngữ">
+                <div class="book-info">
+                    <h3>Sách song ngữ</h3>
+                    <p class="price">55.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach12.jfif" alt="Số Đỏ - Vũ Trọng Phụng">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">140.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach13.jfif" alt="Tấm Cám">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">30.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="cotich">
+                <img src="images/sach14.jfif" alt="Thế giới cổ tích">
+                <div class="book-info">
+                    <h3>Truyện Cổ Tích</h3>
+                    <p class="price">50.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+    
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach15.jfif" alt="Cò và Cáo">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">40.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach16.jfif" alt="Trắng án">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">90.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="tieuthuyet">
+                <img src="images/sach17.jfif" alt="Sherlock Holmes">
+                <div class="book-info">
+                    <h3>Tiểu Thuyết</h3>
+                    <p class="price">140.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="thieunhi">
+                <img src="images/sach18.jfif" alt="Truyện trinh thám dành cho bé">
+                <div class="book-info">
+                    <h3>Truyện Thiếu Nhi</h3>
+                    <p class="price">80.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="ngungon">
+                <img src="images/sach19.jfif" alt="Ông già và biển cả">
+                <div class="book-info">
+                    <h3>Truyện Ngụ Ngôn</h3>
+                    <p class="price">74.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach20.jfif" alt="Cáo trong đêm">
+                <div class="book-info">
+                    <h3>Sách Song Ngữ</h3>
+                    <p class="price">85.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="book-card" data-category="songngu">
+                <img src="images/sach21.jfif" alt="Cổ tích thế giới">
+                <div class="book-info">
+                    <h3>Sách Song Ngữ</h3>
+                    <p class="price">74.000 đ</p>
+                    <a href="#" class="btn">Thêm vào giỏ</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - Đề tài Quản lý bán sách  | Thiết kế Web</p>
+    </footer>
+    <script>
+const slides = document.querySelectorAll(".promo-slide");
+const dots = document.querySelectorAll(".promo-dot");
+const prevBtn = document.querySelector(".promo-prev");
+const nextBtn = document.querySelector(".promo-next");
+
+let currentSlide = 0;
+let autoPlay;
+
+function showSlide(index) {
+    slides[currentSlide].classList.remove("active");
+    dots[currentSlide].classList.remove("active");
+
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides[currentSlide].classList.add("active");
+    dots[currentSlide].classList.add("active");
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+function startAutoPlay() {
+    clearInterval(autoPlay);
+
+    autoPlay = setInterval(function() {
+        nextSlide();
+    }, 4000);
+}
+
+nextBtn.addEventListener("click", function() {
+    nextSlide();
+    startAutoPlay();
+});
+
+prevBtn.addEventListener("click", function() {
+    prevSlide();
+    startAutoPlay();
+});
+
+dots.forEach(function(dot, index) {
+    dot.addEventListener("click", function() {
+        showSlide(index);
+        startAutoPlay();
+    });
+});
+
+startAutoPlay();
+</script>
+</body>
+</html>
